@@ -24,7 +24,10 @@
 
   for(var i = 0; i < flags.length; i++){
     var li = doc.createElementNS("http://www.w3.org/1999/xhtml", "li");
-    li.innerHTML = flags[i];
+    var span = doc.createElementNS("http://www.w3.org/1999/xhtml", "span");
+
+    span.innerHTML = flags[i];
+    li.appendChild(span);
     li.className = "whereami-flags_" + flags[i];
 
     ul.appendChild(li);

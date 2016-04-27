@@ -1,37 +1,52 @@
 .whereami-flags {
   position: fixed;
   top: 30%;
-  right: 20px;
+  right: 0px;
   border-radius: 10px;
-  box-shadow: 4px 4px 5px #777;
   z-index: 999;
 }
 .whereami-flags ul {
   list-style: none;
+  width: auto;
   margin: 0px;
   padding: 0px;
 }
 
 .whereami-flags ul li {
-  color: #ffffff;
-  width: 80px;
-  padding: 10px;
-  text-align: center;
+  display: inline-block;
+  visibility: top;
+  margin-bottom: -4px;
+  width: 32px;
+  height: 32px;
+  background: pink;
+}
+.whereami-flags ul:hover li{
+  display: block;
+  margin: 0px;
+  width: 120px;
+  min-height: 38px;
+  color: #fff;
+}
+.whereami-flags ul:hover li span{
+  display: block;
+  padding: 10px 5px;
   text-transform: uppercase;
 }
+.whereami-flags ul li span {
+  display: none;
+}
+.whereami-flags ul li.whereami-flags_clean {
+  background-color: #fff;
+}
 .whereami-flags ul li.whereami-flags_stage {
-  border-right: 4px solid #007aaa;
-  background-color: #00b6ff;
+  background-color: #489fad;
 }
 .whereami-flags ul li.whereami-flags_prod {
-  border-right: 4px solid #0d7500;
-  background-color: #1dff00;
+  background-color: #98b54a;
 }
 .whereami-flags ul li.whereami-flags_local {
-  border-right: 4px solid #844f00;
-  background-color: #ff9d00;
+  background-color: #af499e;
 }
 .whereami-flags ul li.whereami-flags_admin {
-  border-right: 4px solid #890000;
-  background-color: #ff0000;
+  background-color: #b24949;
 }

@@ -11,8 +11,8 @@
   "content_scripts": [
     {
       "matches": ["*://*/*"],
-      "js": ["whereami.js"],
-      "css": ["whereami.css"]
+      "js": ["js/whereami.js"],
+      "css": ["css/whereami.css"]
     }
   ],
   "browser_action": {

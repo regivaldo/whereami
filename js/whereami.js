@@ -5,7 +5,7 @@
 
   var flags = [];
 
-  if(hostname.indexOf("prodstage") != -1){
+  if(hostname.indexOf("prodstage") != -1 || hostname.indexOf("stage") != -1){
     flags.push("stage");
   } else if(hostname.indexOf("local") != -1){
     flags.push("local");

@@ -9,8 +9,6 @@
     flags.push("stage");
   } else if(hostname.indexOf("local") != -1){
     flags.push("local");
-  } else {
-    flags.push("prod");
   }
 
   if(hostname.indexOf("edit") != -1){

@@ -1,0 +1,26 @@
+{
+  "name": "whereami",
+  "version": "1.0.0",
+  "description": "Onde estou?",
+  "main": "manifest.json",
+  "scripts": {
+    "preinstall": "dart pub get",
+    "sass": "dart run compile-sass.dart"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/regivaldo/whereami.git"
+  },
+  "keywords": [
+    "extension"
+  ],
+  "author": "Regivaldo Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/regivaldo/whereami/issues"
+  },
+  "homepage": "https://github.com/regivaldo/whereami#readme",
+  "devDependencies": {
+    "sass": "^1.71.1"
+  }
+}

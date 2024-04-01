@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/options.css">
+    <title>Where Am I?</title>
+</head>
+<body>
+    <main>
+        <div class="central">
+            <header>
+                <h1>Configurações</h1>
+            </header>
+            <section>
+                <form action="">
+                    <h2>Adicione URLs</h2>
+                    <div class="content">
+                        <input type="url" name="Url" id="url" placeholder="URL">
+                        <input type="text" name="name" id="name" placeholder="Nome do ambiente">
+                        <input type="color" name="color" id="color" placeholder="Escolha a cor">
+                        <button type="submit">Adicionar</button>
+                    </div>
+                </form>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ambiente</th>
+                            <th>URL</th>
+                            <th>Cor</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>DEV</td>
+                            <td>https://dev.google.com</td>
+                            <td><span style="color: #1ab5c0"><span class="color" style="background-color: #1ab5c0"></span>#1ab5c0</span></td>
+                            <td><a href="#remove">Remover</a></td>
+                        </tr>
+                        <tr>
+                            <td>QA</td>
+                            <td>https://google.com</td>
+                            <td><span style="color: #928903"><span class="color" style="background-color: #928903"></span>#928903</span></td>
+                            <td><a href="#remove">Remover</a></td>
+                        </tr>
+                        <tr>
+                            <td>UAT</td>
+                            <td>https://google.com</td>
+                            <td><span style="color: #8f0f84"><span class="color" style="background-color: #8f0f84"></span>#8f0f84</span></td>
+                            <td><a href="#remove">Remover</a></td>
+                        </tr>
+                        <tr>
+                            <td>Produção</td>
+                            <td>https://google.com</td>
+                            <td><span style="color: #FF0000"><span class="color" style="background-color: #FF0000"></span>#FF0000</span></td>
+                            <td><a href="#remove">Remover</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

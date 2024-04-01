@@ -1,0 +1,159 @@
+:root {
+    --background-body: #f1f1f1;
+    --background-element: #fff;
+    --border-color: #ddd;
+    --input-default: #ddd;
+    --input-focus: #254ab3;
+    --input-invalid: #b32525;
+    --input-success: #6ab325;
+    --button-default: #254ab3;
+    --button-hover: #152b68;
+    --button-disabled: #ccc;
+    --color-main: #254ab3;
+    --text-light: #fff;
+    --text-dark: #000;
+    --table-header: #254ab3;
+    --table-even: #f1f1f1;
+    --table-odd: #ccc;
+}
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-body);
+}
+
+main {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+.central {
+    max-width: 1080px;
+    width: 1080px;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    padding: 2rem 1rem;
+    color: var(--text-light);
+    background-color: var(--color-main);
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+section {
+    width: 100%;
+    padding: 2rem 1rem;
+    background-color: var(--background-element);
+}
+
+form {
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    background-color: var(--background-body);
+    border-radius: .5rem;
+}
+
+form .content {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+form .content input:first-child {
+    width: 60%;
+}
+
+input[type=text],
+input[type=url] {
+    padding: .5rem 1rem;
+    border: 1px solid var(--input-default);
+    border-radius: .5rem;
+}
+
+input[type=text]:focus,
+input[type=url]:focus {
+    border: 1px solid var(--input-focus);
+}
+
+button {
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    color: var(--text-light);
+    border: 0;
+    border-radius: .5rem;
+    cursor: pointer;
+    background-color: var(--button-default);
+    transition: .5s background;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
+
+table {
+    width: 100%;
+    margin-top: 1rem;
+    border-collapse: collapse;
+}
+
+table thead th {
+    padding: .5rem;
+    font-size: 1rem;
+    text-align: left;
+    color: var(--text-light);
+    background-color: var(--table-header);
+}
+
+table thead th:first-child {
+    border-radius: .5rem 0 0 0;
+}
+
+table thead th:last-child {
+    text-align: right;
+    border-radius: 0 .5rem 0 0;
+}
+
+table tbody tr:nth-child(even) td {
+    background-color: var(--table-even);
+}
+
+table tbody tr td {
+    padding: .5rem;
+    font-size: .85rem;
+}
+
+table tbody tr td:last-child {
+    text-align: right;
+}
+
+.color {
+    display: block;
+    width: 100%;
+    height: .5rem;
+}

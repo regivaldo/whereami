@@ -20,7 +20,8 @@
       "16": "src/assets/images/16x16.png",   
       "24": "src/assets/images/24x24.png",   
       "32": "src/assets/images/32x32.png"    
-    }
+    },
+    "default_popup": "src/view/popup.html"
   },
   "content_scripts": [
     {

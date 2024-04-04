@@ -1,0 +1,72 @@
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--light);
+}
+
+.central {
+  width: 1080px;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 720px;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../assets/images/hero.jpg');
+}
+header p {
+  color: #f5f7f8;
+  text-align: center;
+  font-size: 2rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 8rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+article {
+  margin-top: -168px;
+}
+
+form {
+  background-color: #f5f7f8;
+}
+form .row {
+  display: flex;
+  gap: 1rem;
+}
+table {
+  border-collapse: collapse;
+}
+table colgroup col:nth-last-child {
+  text-align: right;
+}
+footer {
+  background-color: #011d34;
+}
+
+/*# sourceMappingURL=options.css.map */

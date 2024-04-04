@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "description": "Onde estou?",
   "main": "manifest.json",
-  "scripts": {
-    "preinstall": "dart pub get",
-    "sass": "dart run compile-sass.dart"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/regivaldo/whereami.git"
@@ -19,8 +16,5 @@
   "bugs": {
     "url": "https://github.com/regivaldo/whereami/issues"
   },
-  "homepage": "https://github.com/regivaldo/whereami#readme",
-  "devDependencies": {
-    "sass": "^1.71.1"
-  }
+  "homepage": "https://github.com/regivaldo/whereami#readme"
 }

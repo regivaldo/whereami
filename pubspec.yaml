@@ -1,5 +1,0 @@
-name: whereaim
-environment:
-  sdk: '^3.3.0'
-dev_dependencies:
-  sass: ^1.71.1

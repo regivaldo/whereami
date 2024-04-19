@@ -25,64 +25,45 @@
 		<article>
 			<div class="central">
 				<h2>Adicione URLs</h2>
-				<form action="">
-					<div class="row">
-						<input type="url" name="url" id="url" placeholder="Adicione a URL">
-						<input type="text" name="enviroment" id="enviroment" placeholder="Nome do ambiente">
-						<input type="text" name="type" id="type" placeholder="Tipo de indicação">
-						<input type="color" name="color" id="color" placeholder="Cor">
-						<input type="number" name="border" id="border" placeholder="Espessura da borda">
-						<button type="submit">Adicionar</button>
-					</div>
+				<form onsubmit="save(this)" id="options">
+					<input type="url" name="url" id="url" placeholder="Adicione a URL">
+					<input type="text" name="enviroment" id="enviroment" placeholder="Nome do ambiente">
+					<select name="type" id="type">
+						<option value="-1">Tipo de indicação</option>
+						<option value="border-top">Borda no topo</option>
+						<option value="border-all">Borda completa</option>
+						<option value="balloon">Balão</option>
+					</select>
+					<input type="color" name="color" id="color" placeholder="Cor">
+					<input type="number" name="border" id="border" placeholder="Espessura">
+					<button type="submit">Adicionar</button>
 				</form>
-				<table>
-					<colgroup>
-						<col>
-						<col width="40%">
-						<col>
-						<col>
-						<col>
-						<col width="64px">
-					</colgroup>
-					<thead>
-						<tr>
-							<th>URL</th>
-							<th>Ambiente</th>
-							<th>Tipo</th>
-							<th>Cor</th>
-							<th>Espessura</th>
-							<th>Ações</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>https://google.com</td>
-							<td>Desenvolvimento</td>
-							<td>Borda completa</td>
-							<td>
-								<div class="color"></div>
-							</td>
-							<td>5 px</td>
-							<td>
-								<button type="button">
-									<img src="../assets/icons/pencil-outline.svg" alt="Editar">
-								</button>
-								<button type="button">
-									<img src="../assets/icons/delete-outline.svg" alt="Deletar">
-								</button>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-				<div class="pagination">
-					<nav>
-						<a href="">1</a>
-						<a href="">2</a>
-						<a href="">3</a>
-						<a href="">4</a>
-						<a href="">5</a>
-						<a href="">6</a>
-					</nav>
+				<div class="container">
+					<table>
+						<colgroup>
+							<col width="25%">
+							<col width="20%">
+							<col width="15%">
+							<col width="auto">
+							<col width="64px">
+							<col width="128px">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>URL</th>
+								<th>Ambiente</th>
+								<th>Tipo</th>
+								<th>Cor</th>
+								<th>Espessura</th>
+								<th>Ações</th>
+							</tr>
+						</thead>
+						<tbody>
+							<!-- <tr>
+								<td colspan="6">Nenhum site cadatrado</td>
+							</tr> -->
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</article>
@@ -119,6 +100,7 @@
 						<a href="">Comentários Webstore</a>
 					</nav>
 				</div>
+				<p>Extensão desenvolvida por <a href="https://regivaldo.com.br" target="_blank">Regivaldo Fernandes</a></p>
 			</div>
 		</footer>
 	</main>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   margin: 0px;
   padding: 0px;
@@ -11,3 +12,31 @@ h1 {
   font-size: 16px;
   color: #229fc9;
 }
+=======
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 320px;
+}
+
+header {
+  background-image: url("../assets/images/hero.jpg");
+}
+>>>>>>> 38e03aa93ca85e052268df04364f22df19acb13f

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="metviewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital@0;1&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="../css/color.css">
+	<link rel="stylesheet" href="../css/options.css">
+	<title>Where Am I?</title>
+</head>
+
+<body>
+	<main>
+		<header>
+			<div class="central">
+				<h1>Configurações</h1>
+				<p>Ajuste as configurações de forma a melhor te agradar.</p>
+			</div>
+		</header>
+		<article>
+			<div class="central">
+				<h2>Adicione URLs</h2>
+				<form onsubmit="save(this)" id="options">
+					<input type="url" name="url" id="url" placeholder="Adicione a URL">
+					<input type="text" name="enviroment" id="enviroment" placeholder="Nome do ambiente">
+					<select name="type" id="type">
+						<option value="-1">Tipo de indicação</option>
+						<option value="border-top">Borda no topo</option>
+						<option value="border-all">Borda completa</option>
+						<option value="balloon">Balão</option>
+					</select>
+					<input type="color" name="color" id="color" placeholder="Cor">
+					<input type="number" name="border" id="border" placeholder="Espessura">
+					<button type="submit">Adicionar</button>
+				</form>
+				<div class="container">
+					<table>
+						<colgroup>
+							<col width="25%">
+							<col width="20%">
+							<col width="15%">
+							<col width="auto">
+							<col width="64px">
+							<col width="128px">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>URL</th>
+								<th>Ambiente</th>
+								<th>Tipo</th>
+								<th>Cor</th>
+								<th>Espessura</th>
+								<th>Ações</th>
+							</tr>
+						</thead>
+						<tbody>
+							<!-- <tr>
+								<td colspan="6">Nenhum site cadatrado</td>
+							</tr> -->
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</article>
+		<footer>
+			<div class="central">
+				<div class="columns">
+					<nav>
+						<h4>Menu</h4>
+						<a href="">Portfólio</a>
+						<a href="">LinkedIn</a>
+						<a href="">Github</a>
+					</nav>
+					<nav>
+						<h4>Projetos Open Source</h4>
+						<a href="">Where am I?</a>
+						<a href="">Ugla</a>
+					</nav>
+					<nav>
+						<h4>Livros</h4>
+						<a href="">Vingança</a>
+						<a href="">Suicídio</a>
+						<a href="">Suicide</a>
+					</nav>
+					<nav>
+						<h4>Sites</h4>
+						<a href="https://regivaldo.com.br">https://regivaldo.com.br</a>
+						<a href="https://escoteiros.app">https://escoteiros.app</a>
+						<a href="https://gemr.com.br">https://gemr.com.br</a>
+					</nav>
+					<nav>
+						<h4>Contato</h4>
+						<a href="mailto:contato@regivaldo.com.br">contato@regivaldo.com.br</a>
+						<a href="https://regivaldo.com.br/contato">https://regivaldo.com.br/contato</a>
+						<a href="">Comentários Webstore</a>
+					</nav>
+				</div>
+				<p>Extensão desenvolvida por <a href="https://regivaldo.com.br" target="_blank">Regivaldo Fernandes</a></p>
+			</div>
+		</footer>
+	</main>
+	<script src="../js/options.js"></script>
+</body>
+
+</html>

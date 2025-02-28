@@ -1,27 +1,43 @@
 {
   "name": "whereami",
   "version": "1.0.0",
+<<<<<<< HEAD
   "description": "Where am i?",
   "main": "js/whereami.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+=======
+  "description": "Onde estou?",
+  "main": "manifest.json",
+  "scripts": {},
+>>>>>>> 38e03aa93ca85e052268df04364f22df19acb13f
   "repository": {
     "type": "git",
     "url": "git+https://github.com/regivaldo/whereami.git"
   },
   "keywords": [
+<<<<<<< HEAD
     "env"
   ],
   "author": "Regivaldo Silva <regivaldorfs@gmail.com>",
+=======
+    "extension"
+  ],
+  "author": "Regivaldo Silva",
+>>>>>>> 38e03aa93ca85e052268df04364f22df19acb13f
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/regivaldo/whereami/issues"
   },
+<<<<<<< HEAD
   "homepage": "https://github.com/regivaldo/whereami#readme",
   "devDependencies": {
     "@eslint/js": "^9.21.0",
     "eslint": "^9.21.0",
     "globals": "^16.0.0"
   }
+=======
+  "homepage": "https://github.com/regivaldo/whereami#readme"
+>>>>>>> 38e03aa93ca85e052268df04364f22df19acb13f
 }

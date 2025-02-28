@@ -2,3 +2,7 @@ node_modules
 # Ignore artifacts:
 build
 coverage
+<<<<<<< HEAD
+=======
+dist
+>>>>>>> 38e03aa93ca85e052268df04364f22df19acb13f

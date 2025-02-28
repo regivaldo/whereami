@@ -1,26 +1,24 @@
 {
   "name": "Where am I?",
   "version": "1.0.0",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "description": "Where are you? In production? In homologation? In localhost? Not have doubt!",
   "icons": {
-    "16": "images/icon16.png",
-    "48": "images/icon48.png",
-    "128": "images/icon128.png"
+    "16": "src/images/icon16.png",
+    "48": "src/images/icon48.png",
+    "128": "src/images/icon128.png"
   },
   "content_scripts": [
     {
       "matches": ["*://*/*"],
-      "js": ["js/whereami.js"],
-      "css": ["css/whereami.css"]
+      "js": ["src/js/whereami.js"],
+      "css": ["src/css/whereami.css"]
     }
   ],
   "browser_action": {
-    "default_icon": "images/icon16.png",
+    "default_icon": "src/images/icon16.png",
     "default_title": "Where am I?",
-    "default_popup": "popup.html"
+    "default_popup": "src/pages/popup.html"
   },
-  "permissions": [
-    "activeTab"
-  ]
+  "permissions": ["activeTab"]
 }
